@@ -27,6 +27,11 @@ console.log("=================================");
 
 })
 }
+
+    function sayHello(){
+        console.log("Hello")
+    }
+
             rl.question("Enter your choice (1-3): ", choice => {
     console.log(choice);
 
