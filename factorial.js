@@ -32,6 +32,28 @@ console.log("=================================");
         console.log("Hello")
     }
 
+    function computeFactorial(){
+        console.log("Factorial");
+
+        rl.question("Please enter a number for factorial: ", numStr =>{
+            let num = parseInt(numStr);
+
+         if (isNaN(num) || num < 0){
+            console.log("Please enter non integer");
+         }else{
+            let fact = 1;
+          
+         for(i = 1; i <= num; ++){
+            fact *=i;
+         }
+
+         console.log("The factorial of " + num + " is " +fact);
+        }
+        backToMenu();
+        })
+    }        
+    
+    
             rl.question("Enter your choice (1-3): ", choice => {
     console.log(choice);
 
